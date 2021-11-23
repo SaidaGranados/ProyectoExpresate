@@ -1,0 +1,24 @@
+<!--<div class="item"><a routerLink="/cliente/miperfil">Mi Perfil</a></div>
+<div class="item"><a routerLink="/cliente/contrasena">Contraseña</a></div>    
+<div class="item"><a routerLink="/administracion/clientes" *ngIf="usuarioservicio.rol_actual == '1'">Administrar clientes</a></div>
+<div class="item"><a routerLink="/administracion/vendedores" *ngIf="usuarioservicio.rol_actual == '1'">Administrar vendedores</a></div>
+<div class="item"><a (click)="cerrarSesion()">Cerrar sesion</a></div>-->
+
+
+<ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="/cliente/miperfil">Mi perfil</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/cliente/contrasena">Contraseña</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/administracion/clientes" *ngIf="usuarioservicio.rol_actual == '1'">Administrar Clientes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/administracion/vendedores" *ngIf="usuarioservicio.rol_actual == '1'">Administrar Vendedores</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" (click)="cerrarSesion()">Cerrar sesion</a>
+      </li>
+</ul>

@@ -1,0 +1,48 @@
+a.nav-link{
+    color:black;
+    font-weight: bolder;   
+
+}
+
+a.nav-link:hover{         
+    
+    text-decoration: underline;
+}
+
+img#cart{
+    position: relative;    
+    left: 36px;    
+}
+
+button.btn {    
+    color:white;
+    margin-left: 59px;    
+    font-weight: bolder;    
+    /*background: #b687ce;*/
+    font-family: 'Playfair Display', serif;    
+    border-radius: 0;
+    /*border: solid 4px #b687ce;*/
+    background-color: #ce4ed2;
+    border: 1px solid #fbd3df;    
+    
+}
+
+
+button.btn:hover {    
+    color:black;      
+    background:#b687ce;   
+}
+
+div#micarrito {
+    border: solid 1px red;    
+    color: red;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    height: 30px;
+    font-size: 19px;
+    position: absolte;
+    position: relative;
+    left:61px;
+
+}

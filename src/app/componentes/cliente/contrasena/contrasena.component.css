@@ -1,0 +1,37 @@
+input {
+    border-radius: 35px;
+    border-color: hsl(298, 65%, 65%);
+    padding: 3.5%;
+    font-family: 'Playfair Display', serif;
+}
+
+/*.cuadro_contrasena {
+    border: solid 1px #ebebeb;
+    width: 50%;    
+    padding: 35px; 
+    margin-top: 8%;
+    margin-bottom: 10%;
+    
+
+}*/
+
+
+.cuadro_contrasena.col-12.col-sm-12.col-md-7 {
+    border: solid 1px #ebebeb;
+    width: -5%;    
+    padding: 35px;
+    margin-top: 4%;
+    margin-bottom: 10%;
+
+
+}
+
+
+button.btn.btn-danger {
+    font-family: 'Playfair Display', serif;
+    border-radius: 0;
+    background-color: #ce4ed2;
+    border: 1 px solid #fbd3df;
+}
+
+

@@ -1,0 +1,61 @@
+<div class="container bg-white" style="height: 750px;">
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-12 col-md-9 col-sm-9">
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="p-5" >
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Registrate</h1>
+                                </div>
+                                <!--Inicio de formulario-->
+                                <form class="user was-validated" id="frmRegistrate" name="frmRegistrate">
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="txtNombres"
+                                                placeholder="Ingrese Nombre Completo" name="txtNombres" maxlength="50" required [(ngModel)]="registro.nombrecompleto">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="email" class="form-control form-control-user" id="txtCorreo" style="font-size: 0.8rem; border-radius: 10rem; height: 50px;"
+                                                placeholder="Ingrese Correo Electrónico" name="txtCorreo" maxlength="50" required [(ngModel)]="registro.email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="password" class="form-control form-control-user" id="txtPassword" style="font-size: 0.8rem; border-radius: 10rem; height: 50px;"
+                                                placeholder="Ingrese Contraseña" name="txtPassword" maxlength="50" required [(ngModel)]="registro.password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="password" class="form-control form-control-user" id="txtPasswordConfirm" style="font-size: 0.8rem; border-radius: 10rem; height: 50px;"
+                                                placeholder="Ingrese Confirmación de Contraseña" name="txtPasswordConfirm" maxlength="50" required [(ngModel)]="registro.confirm">
+                                        </div>
+                                    </div>                                 
+
+
+                                    <div class="form-group row">
+                                        <button type="button" class="btn btn-danger" id="btnGuardar" (click)="registrarUsuario(registro)">Registrarme</button>                                        
+                                    </div>
+
+                                    <p class="redireccion" routerLink="/login">Volver a inicio de sesion</p>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block bg-registro-image"></div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

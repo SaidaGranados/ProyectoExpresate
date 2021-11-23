@@ -1,0 +1,24 @@
+h1{    
+    font-weight: bold;
+    /*font-family: 'Playfair Display', serif;*/
+    text-align: center;    
+    margin-top: 5%;
+    text-align: center;
+    color:#474953;
+    
+    
+}
+
+
+.nuevo.col-12.col-sm-12.col-md-12.col-lg-12 {
+    position: relative;
+    left:80%;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(180 90 195 / 14%);
+    /*background-color: #fff3cd;*/
+}
+
+
+

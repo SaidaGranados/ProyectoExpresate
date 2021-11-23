@@ -1,0 +1,7 @@
+.btn-success:disabled {
+    color: #fff;
+    background-color: #1cc88a;
+    border-color: #1cc88a;
+    margin-top: 5px;
+    padding:2px;
+}

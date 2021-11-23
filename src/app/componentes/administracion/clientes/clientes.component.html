@@ -1,0 +1,102 @@
+<div class="container">
+    <h1>LISTADO CLIENTES</h1>
+
+            
+        <div class="nuevo col-12 col-sm-12 col-md-12 col-lg-12"><img src='assets/Imagenes/btnguardar.png' width='45' height='45' data-toggle="modal" data-target="#misclientes" (click)="Nuevo()">Agregar registro</div>
+
+        <a class="navbar-brand" href="http://127.0.0.1:3002/usuarios/listartodosXLS" style="font-size: 18px;">Descargue listado clientes          
+            <img src="assets/Imagenes/excel.png" width="40" height="40" alt="" >
+        </a>
+        
+      <div class="row">
+        <table class="table table-striped" style="margin-top:2%; margin-bottom: 8%;">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre Completo</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Rol id</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of listaclientes">
+                    <th scope="row">{{i.nombrecompleto}}</th>
+                    <td>{{i.email}}</td>
+                    <td>
+                      <div *ngIf="i.estado == '1'">Activo</div>
+                      <div *ngIf="i.estado == '0'">Inactivo</div>
+                    </td>
+                    <td>
+                      <div *ngIf="i.rol_id == '0'">Sin Rol</div>
+                      <div *ngIf="i.rol_id == '2'">Cliente</div>
+                      <div *ngIf="i.rol_id == '1'" >Administrador</div>                      
+                      <div *ngIf="i.rol_id == '3'">Vendedor</div>
+                    </td>
+
+                    <!--<td><button class="btn btn-success">Editar</button></td>-->
+                    <td><img src='assets/Imagenes/editicon.png' width='25' height='25' data-toggle="modal" data-target="#misclientes" (click)="Editar(i._id)" ></td>              
+                    <td><img src='assets/Imagenes/deleteicon.png' width='25' height='25'(click)="Eliminar(i._id)" ></td>              
+                </tr>
+            </tbody>
+        </table>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="misclientes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nuevo cliente</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" [(ngModel)]="nombrecompleto">               
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" [disabled]="modoeditar" class="form-control" id="email" [(ngModel)]="email">               
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" [(ngModel)]="password">               
+            </div>
+            <div class="form-group">
+                <label for="confirm">Confirmación contraseña</label>
+                <input type="password" class="form-control" id="confirm" [(ngModel)]="confirm">               
+            </div>
+
+        <div *ngIf="modoeditar">
+            <div class="form-group">
+              <label for="estado">Estado</label>
+              <input type="text" class="form-control" id="estado" [(ngModel)]="estado">               
+            </div>
+            <div class="form-group">
+              <label for="codigoactivacion">Codigo Activación</label>
+              <input type="text" class="form-control" id="codigoactivacion" [(ngModel)]="codigoactivacion">               
+            </div>
+            <div class="form-group">
+              <label for="rol">Rol</label>
+              <!--<input type="text" class="form-control" id="rol" [(ngModel)]="rol_id">       -->              
+              <select [(ngModel)]="rol_id" class="form-control form-control-lg">
+                <option value="1" >Administrador</option>
+                <option value="2" >Cliente</option>
+              </select>
+            </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" (click)="Guardar()" *ngIf="!modoeditar" data-dismiss="modal">Guardar</button>
+          <button type="button" class="btn btn-primary" (click)="Actualizar()" *ngIf="modoeditar" data-dismiss="modal">Actualizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

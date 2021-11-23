@@ -1,0 +1,82 @@
+<div class="container bg-white">
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-12 col-md-9">
+        <h1 class="elementor-heading-title elementor-size-large"> ¡Expresate es diversidad y alegría!   </h1>
+    <div class="feature-banner__content">
+        <div class="feature-banner feature-banner--full-width da-vinci-code-background--pink feature-banner--no-image">
+            <div class="feature-banner__content">
+                <div class="banner__content_header">
+                    <h2>
+                    </h2>
+                    <h2></h2> 
+                    <h6>Estamos aquí para sacar a relucir tu GENIALIDAD. Todos nos destacamos de alguna manera en algo. Sin embargo, si te interesa y te animas a realizar los mejores arreglos y sacar sonrisas.
+                        Demuestranos el talento y trabajo que tienes en tus manos
+                        ¡Trabaja con nosotros,anímate!
+                    </h6>         
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-12 col-md-9 col-sm-9">
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Trabaja con nosotros</h1>
+                                </div>
+                                <!--Inicio de formulario-->
+                                <form class="user was-validated" id="frmRegistrate" name="frmRegistrate">
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="txtNombres"
+                                                placeholder="Ingrese nombre completo" name="txtNombres" maxlength="50" required [(ngModel)]= "registro.nombrecompleto">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="number" class="form-control form-control-user" id="txtTelefono"
+                                                placeholder="Ingrese Teléfono" name="txtTelefono" maxlength="50" required [(ngModel)]= "registro.telefono">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="txtDireccion"
+                                                placeholder="Ingrese La  Dirección" name="txtDireccion" maxlength="50" required [(ngModel)]= "registro.direccion">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="email" class="form-control form-control-user" id="txtCorreo" style="font-size: 0.8rem; border-radius: 10rem; height: 50px;"
+                                                placeholder="Ingrese Correo Electrónico" name="txtCorreo" maxlength="50" required [(ngModel)]= "registro.email">
+                                        </div>
+                                    </div>
+                                    <!--<div class="form-group row">
+                                        
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <strong style="align-content: center;">Adjunta tu hoja de vida</strong>
+                                            <app-uploadfiles></app-uploadfiles>
+
+                                        </div>
+                                    </div>-->
+                                    <div class="form-group row">
+                                        <button type="button" class="btn btn-danger" id="btnGuardar" (click)="registrarVendedor(registro)" >Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block bg-trabaja-image"></div>
+                        <div class="col-lg-6" style="background: rgb(231, 142, 216);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+

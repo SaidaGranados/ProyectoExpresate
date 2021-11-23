@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class=" menulateral col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            menu lateral
+            <app-menulateral></app-menulateral>        
+        </div>
+
+        <div class="datoscliente col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 ">
+            <div class="row">
+                <div class="cuadro_contrasena col-12 col-sm-12 col-md-7">                
+                    <div>                        
+                        <h5 style="text-align:center" class="h4 text-gray-900 mb-4" >Actualiza tu contraseña</h5>
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="password" class="form-control" id="pass" placeholder="Contraseña" [(ngModel)]="password">
+                    </div>
+                    <div class="form-group">                       
+                        <input type="password" class="form-control" id="confirm" placeholder="Confirmación de contraseña" [(ngModel)]="confirm">
+                    </div>                    
+                    <button type="submit" class="btn btn-danger"  (click)="cambiarPassword()">Cambiar contraseña</button>
+                </div>  
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+

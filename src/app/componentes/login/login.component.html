@@ -1,0 +1,45 @@
+
+<div class="container bg-white">
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-12 col-md-9 col-sm-9">
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="p-5" >
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Iniciar Sesión</h1>
+                                </div>
+                                <!--Inicio de formulario-->
+                                <form class="user was-validated" id="frmRegistrate" name="frmRegistrate">
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="email" class="form-control form-control-user" id="txtCorreo" style="font-size: 0.8rem; border-radius: 10rem; height: 50px;"
+                                                placeholder="Ingrese Correo Electrónico" name="txtCorreo" maxlength="50" required [(ngModel)]="login.email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input type="password" class="form-control form-control-user" id="txtPassword"
+                                                placeholder="Ingrese Contraseña" name="txtPassword" maxlength="50" required [(ngModel)]="login.password">
+                                        </div>
+                                    </div>
+                                    <div  class="form-group row">
+                                        <button type="button" class="btn btn-danger" id="btnGuardar" (click)="iniciarSesion(login)" >Iniciar Sesión</button>                                       
+                                        
+                                    </div>
+                                    <a href=""><p style="text-align: center; color:black">¿Olvidaste tu contraseña?</p></a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                        <div class="col-lg-6" style="background: rgb(231, 142, 216);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

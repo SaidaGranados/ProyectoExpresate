@@ -1,0 +1,293 @@
+
+header {
+    /*background-color: #f8f9fa;*/
+    /*background: white;*/
+    box-shadow: rgb(14 30 37 / 8%) 0px 2px 4px 0px, rgb(14 30 37 / 0%) 0px 2px 16px 0px;
+}
+
+button.btn {    
+    color:white;
+    margin-left: 59px;
+    font-weight: bolder;    
+    /*background: #b687ce;*/
+    font-family: 'Playfair Display', serif;    
+    border-radius: 0;
+    /*border: solid 4px #b687ce;*/
+    background-color: #ce4ed2;
+    border: 1px solid #fbd3df;    
+    
+}
+
+
+button.btn:hover {    
+    color:black;      
+    background:#b687ce;   
+}
+
+
+#steps{
+    margin-bottom: 7%;
+    text-align: center;
+    margin-top: 3%;  
+}
+
+#imagen{
+    
+    width:100%;
+    margin-bottom: 2px;
+    
+}
+
+
+.card.card-body {
+    border: #ce4ed2 double;
+    background: #f5e6f5;
+}
+
+h1{
+    font-size: 7em;
+    line-height: 1;    
+    font-family: 'Dancing Script', cursive;
+}
+
+
+strong {
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.texto-encima{
+    position: absolute;
+    top: calc(45% - 111px);
+    right: 4%;
+    text-align: center;
+    color:white;
+    text-align: right;
+    line-height: inherit;    
+    text-decoration: none;
+    cursor: pointer;    
+        
+}
+
+
+h2 {
+    position: relative;
+    bottom: 25px;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;    
+    padding-top:7px;
+    color:black;
+    margin-bottom: 5%;
+    display:inline-block;
+
+}
+
+h2::after,h2::before{
+    content:'';
+    position:absolute;
+    width:120px;
+    height: 3px;
+    background-color: currentColor;
+    top:0.8em;
+}
+
+h2::before{
+    left:-140px;
+}
+
+/*h2::after{
+    right:-140px;
+}*/
+
+
+h3 {
+    position: relative;
+    bottom: 25px;
+    font-size: 55px;
+    font-weight: bold;    
+    font-family: 'Dancing Script', cursive;
+    padding-top:5px;
+    color:white;
+
+}
+
+
+.container.text-center.my-3 {
+    padding-bottom: 126px;
+}
+
+#frame-testimonios {
+    
+    /*height: 43vh;*/
+    height: auto;
+    border-top: solid 1px #b1adad;
+    
+    opacity: 0.8;  
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;    
+    
+}
+
+h5{
+    color:white;
+}
+
+
+h5.card-title {
+    color: black;
+}
+
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-bottom: 30px;
+}
+
+img.pasos {
+    
+    background: #e0a0e6;
+    width: 80px;
+    height: 80px;
+    /* position: relative; */
+    right: 119px;
+    border-radius: 57px;
+    background-position: 50% 50%;
+    background-size: 35px;
+    border: solid 1px #e0a0e6;
+    position: absolute;
+    top: -42px;
+    
+}
+
+
+.card.text-center {
+    padding: 30px;
+    padding-top: 30px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+    color:black
+    
+}
+
+p{
+    color:black 
+}
+
+
+@media (max-width: 419px) and (min-width: 0px)
+{
+
+    h1{
+        font-size: 3em;
+    }
+
+    strong{        
+        font-size: 1em;
+    }
+ 
+
+    .texto-encima{
+        top: calc(60% - 111px);
+        right: 5%; 
+            
+    }
+
+    /*#frame-testimonios {
+        height: 60vh;
+        position:relative;
+        
+    }*/
+
+    #imagen{
+        height: 45vh;
+        
+    }
+    
+    img.pasos {
+        right: 38%;
+    }
+
+}
+
+@media (max-width: 767px) and (min-width: 420px)
+{
+    h1{
+        font-size: 3em;
+    }
+
+    strong{        
+        font-size: 1em;
+    }
+
+    /*#frame-testimonios {
+        height: 60vh;
+    }*/
+
+    img.pasos {   
+        right: 1.5px;
+    }
+
+    .card.text-center {
+        padding: 3%;
+        padding-top: 20px;
+    }
+
+    h5.card-title {
+        font-size:80%;
+    }
+
+    img.pasos {
+        right: 20%;
+    }
+
+}
+
+
+@media (max-width: 991px) and (min-width: 768px)
+{
+
+    h1{
+        font-size: 4em;
+    }
+
+    strong{        
+        font-size: 1.5em;
+    }
+
+    .card.text-center {
+        padding: 4%;
+        padding-top: 20px;
+    }
+
+    img.pasos {
+        right: 30%;
+    }
+
+
+}
+
+@media (max-width: 1199px) and (min-width: 992px)
+{
+
+    h1{
+        font-size: 5em;
+    }
+
+    strong{        
+        font-size: 2em;
+    }
+
+    .texto-encima {
+        right: 8%;
+        top: calc(58% - 111px);    
+    }
+
+}
+
+@media (max-width: 5000px) and (min-width: 1200px)
+{
+
+}

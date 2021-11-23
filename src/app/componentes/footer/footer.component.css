@@ -1,0 +1,25 @@
+div#footer {
+    position: absolute;    
+    background: black;
+    width: 100%;
+   
+}
+
+.margen_inf{
+    margin-bottom:  30px;
+    margin-top:9px;    
+}
+
+.titulo_footer{
+    color:white;
+    font-size:larger;
+}
+
+.underline{
+    color:#858796;
+    cursor:pointer;
+}
+
+.underline:hover{  
+    text-decoration: underline;
+}

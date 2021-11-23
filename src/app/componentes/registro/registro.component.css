@@ -1,0 +1,23 @@
+
+button#btnGuardar {
+    background-color: #ce4ed2;
+    border: 1px
+ solid #fbd3df;
+    height: 40px;
+    width: 170px;
+    position: relative;
+    top: 50%;
+    left: 20%;
+    border-radius: 1px;
+}
+
+p.redireccion {
+    text-align: center;
+    color: black;
+    
+}
+
+p.redireccion:hover{
+    text-decoration: underline;
+}
+

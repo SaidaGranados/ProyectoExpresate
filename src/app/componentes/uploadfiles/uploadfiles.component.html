@@ -1,0 +1,9 @@
+<div class="upload">
+<input type="file" (change)="seleccionararchivo($event)">
+<button class="btn btn-success" [disabled]= "booseleccionado" (click)="upload()">Subir archivo</button>
+<div>Progreso: {{progress}}%</div>
+</div>
+
+
+
+

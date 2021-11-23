@@ -1,0 +1,61 @@
+.container {
+    height: 674px;
+    
+}
+
+button.carousel-control-next {
+    opacity: 0;
+}
+
+button.carousel-control-prev {
+    opacity: 0;
+}
+
+
+.cargo{
+    top:8px;
+    position:relative;
+    width: 85%;
+    text-align: center;
+    color:gray;
+}
+
+.nombre{
+    position:relative;
+    top:8px;
+    width: 85%;
+    text-align: center;
+    color:gray;
+}
+
+img.imgpersona {
+    width: 50%;
+    height: 50%;
+    border-radius: 60% !important;
+    left: 24px;
+    position: relative;    
+    border:solid 6px #ebebeb;
+}
+
+
+.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4 {   
+    margin-top:20px;
+    padding:25px;    
+   
+}
+
+.text-center {
+    padding-top: 60px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+iframe.embed-responsive-item {
+    box-shadow: rgb(240 46 170 / 40%) 0px 5px, rgb(240 46 170 / 30%) 0px 10px, rgb(240 46 170 / 20%) 0px 15px, rgb(240 46 170 / 10%) 0px 20px, rgb(240 46 170 / 5%) 0px 25px;
+    
+}
+
+
+
+
+
